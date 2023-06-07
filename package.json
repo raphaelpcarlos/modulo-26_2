@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": " npx serverest",
-    "cy:run": "cypress run — env allure=true",
+    "cy:run": "npx cypress run",
     "clean:folders": "rm -R -f allure-report/* && rm -R -f allure-results/*",
     "allure:report": "yarn run allure generate allure-results — clean -o allure-report && allure open allure-report",
     "beforetest": "npm run clean:folders",
