@@ -4,13 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": " npx serverest",
-    "cy:run": "npx cypress run",
-    "clean:folders": "rm -R -f allure-report/* && rm -R -f allure-results/*",
-    "allure:report": "yarn run allure generate allure-results — clean -o allure-report && allure open allure-report",
-    "beforetest": "npm run clean:folders",
-    "tests": "npm run cy:run || npm run aftertest",
-    "aftertest": "npm run allure:report",
-    "cy:run-ci": "start-server-and-test start http://127.0.0.1:3000/api-doc test"
+    "cy:run": "npx cypress run"
   },
   "author": "",
   "license": "ISC",
